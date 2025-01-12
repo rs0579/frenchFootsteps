@@ -36,10 +36,12 @@ body {
 
 header {
   width: 100%;
+  position: sticky;
 }
 
 
 header h1 {
+  position: sticky;
   background-color: #333;
   color: red;
   padding: 1rem;
@@ -200,7 +202,7 @@ span::after :hover{
 /* Footer Styles */
 
 #mainFooter {
-  position: sticky;
+  
   background-color: beige;
   color: black;
   left: 0;
@@ -241,6 +243,7 @@ span::after :hover{
     grid-template-rows: 2fr, 1fr, 1fr;
   }
 }
+
 
 @media screen and (max-width: 1024px) {
   .grid {
