@@ -10,6 +10,8 @@ const errorEl = document.getElementById('errorMessage');
 const contFormEl = document.getElementById('contactForm');
 const refModalEl = document.getElementById('refModal');
 const refBtnEl = document.getElementById('refBtn');
+const addResBtnEl = document.getElementById('addResBtn')
+const addResModalEl = document.getElementById('addResModalEl')
 
 
 function chambord(){
@@ -67,7 +69,12 @@ const handleRef = function () {
 
 refBtnEl.addEventListener('click', handleRef);
 
+// This is the beginning of the script for the additional resources list modal///////
+const handleAddRes = function () {
+    resModalEl.style.display = 'block';
+}
 
+addResBtnEl.addEventListener('click', handleAddRes);
 
 
 // // This is the bottom of the modals grouping//////////

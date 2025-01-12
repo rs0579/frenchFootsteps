@@ -19,63 +19,12 @@
 <body>
 
     <aside class="sidebar" id="">
-            <!-- This is the contact form modal -->
+            <!-- This is the contact form modal button -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal" id="contactBtn">Contact Us</button>
-        <section class="modal" id="contactModal">
-                <section class="modal-dialog">
-                    <section class="modal-content">
-                        <section class="modal-header">
-                            <h1 class="modal-title fs-5" id="contactTitle">We Want to Hear From You!</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </section>
-                        <section class="modal-body">
-                        <form class="contactForm">
-                            <section class="mb-3">
-                                <label for="formGroupExampleInput" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="contNameInput" placeholder="">
-                            </section>
-                            <section class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">Email</label>
-                                <input type="text" class="form-control" id="contEmailInput" placeholder="">
-                            </section>
-                            <section class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">Message</label>
-                                <input type="text" class="form-control" id="contactMessageInput" placeholder="">
-                            </section> 
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="contCloseBtn">Cancel</button>
-                            <button type="submit" class="btn btn-primary" id="contSendBtn">Send</button>
-                        </form>
-                        
-                        <section class="modal-footer" id="contModalFooter">
-                           
-                        </section>
-                    </section>
-                </section>
-            </section>
-        </section>
-
-            <!-- This is the reference list modal -->
+            <!-- This is the reference list modal button-->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#refModal" id="refBtn">References</button>
-        <section class="modal" id="refModal">
-                <section class="modal-dialog">
-                    <section class="modal-content">
-                        <section class="modal-header">
-                            <h1 class="modal-title fs-5" id="refTitle">References</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </section>
-                        <section class="modal-body">
-                            <ul id="refList">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <section class="modal-footer" id="refModalFooter"></section>
-                           
-                        </section>
-                    </section>
-                </section>
-            <!-- This is the additional resources modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addResourceModal" id="addResourceBtn">Additional Resources</button>
+            <!-- This is the additional resources modal button-->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addResModal" id="addResBtn">Additional Resources</button>
     </aside>
 
     <main class="grid">
@@ -132,7 +81,81 @@
         </section>
 
     </main>
-    
+
+<!-- Modals Here -->
+    <section class="modal" id="contactModal">
+        <section class="modal-dialog">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h1 class="modal-title fs-5" id="contactTitle">We Want to Hear From You!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </section>
+                <section class="modal-body">
+                <form class="contactForm">
+                    <section class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="contNameInput" placeholder="">
+                    </section>
+                    <section class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="contEmailInput" placeholder="">
+                    </section>
+                    <section class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="contactMessageInput" placeholder="">
+                    </section> 
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="contCloseBtn">Cancel</button>
+                    <button type="submit" class="btn btn-primary" id="contSendBtn">Send</button>
+                </form>
+                
+                <section class="modal-footer" id="contModalFooter">
+                   
+                </section>
+            </section>
+        </section>
+    </section>
+</section>
+
+<section class="modal" id="refModal">
+    <section class="modal-dialog">
+        <section class="modal-content">
+            <section class="modal-header">
+                <h1 class="modal-title fs-5" id="refTitle">References</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </section>
+            <section class="modal-body">
+                <ul id="refList">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <section class="modal-footer" id="refModalFooter"></section>
+               
+            </section>
+        </section>
+    </section>
+</section>
+
+<section class="modal" id="addResModal">
+    <section class="modal-dialog">
+        <section class="modal-content">
+            <section class="modal-header">
+                <h1 class="modal-title fs-5" id="refTitle">Additional Resources</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </section>
+            <section class="modal-body">
+                <ul id="addResList">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <section class="modal-footer" id="addResModalFooter"></section>
+               
+            </section>
+        </section>
+    </section>
+</section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
        

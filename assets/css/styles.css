@@ -69,7 +69,7 @@
     position: relative;
     grid-template-columns: repeat(3, 1fr);
     background-color: beige;
-    align-items: center;
+    align-items: normal;
     flex: 4;
   }
   
@@ -211,9 +211,14 @@
   /* Responsive Styles */
 @media only screen and (max-width: 425px) {
   .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr, 1fr, 1fr;
+  }
    
     }
   .sidebar {
+      position: sticky;
+      top: 0;
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -221,12 +226,16 @@
 
 @media screen and (max-width: 768px) {
     .grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr, 1fr, 1fr;
     }
 }
 
  @media screen and (max-width: 1024px){
-
+  .grid {
+    grid-template.columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr;
+  }
  }
   
 
