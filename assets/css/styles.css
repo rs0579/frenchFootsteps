@@ -53,12 +53,17 @@ body {
 
 header {
   width: 100%;
+  position: sticky;
 }
 
 
 
 header h1 {
+  position: sticky;
+  background-color: #333;
+  color: red;
   background-color: none;
+  color: rgb(92, 10, 10);
   color: rgb(209, 209, 209);
   padding: 1rem;
   text-align: center;
@@ -234,7 +239,9 @@ span::after :hover{
 /* Footer Styles */
 
 #mainFooter {
+  background-color: beige;
   position: sticky;
+  background-color: rgb(164, 92, 45);
   background-color: none;
   color: black;
   left: 0;
@@ -277,16 +284,10 @@ span::after :hover{
   }
 }
 
+
 @media screen and (max-width: 1024px) {
   .grid {
     grid-template.columns: 1fr, 1fr, 1fr;
     grid-template-rows: 1fr, 1fr, 1fr;
   }
- }
-  
 
-
-  
-  
-  
-  
