@@ -19,8 +19,9 @@
 <body>
 
     <aside class="sidebar" id="">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal" id="contactBtn">Contact Us</button>
-            <section class="modal" id="contactModal">
+            <!-- This is the contact form modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal" id="contactBtn">Contact Us</button>
+        <section class="modal" id="contactModal">
                 <section class="modal-dialog">
                     <section class="modal-content">
                         <section class="modal-header">
@@ -51,8 +52,30 @@
                     </section>
                 </section>
             </section>
-            <a href="">References</a>
-            <a href="">Additional</a>
+        </section>
+
+            <!-- This is the reference list modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#refModal" id="refBtn">References</button>
+        <section class="modal" id="refModal">
+                <section class="modal-dialog">
+                    <section class="modal-content">
+                        <section class="modal-header">
+                            <h1 class="modal-title fs-5" id="refTitle">References</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </section>
+                        <section class="modal-body">
+                            <ul id="refList">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <section class="modal-footer" id="refModalFooter"></section>
+                           
+                        </section>
+                    </section>
+                </section>
+            <!-- This is the additional resources modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addResourceModal" id="addResourceBtn">Additional Resources</button>
     </aside>
 
     <main class="grid">

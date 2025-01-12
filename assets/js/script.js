@@ -7,7 +7,10 @@ const contNameEl = document.getElementById('contNameInput')
 const contEmailEl = document.getElementById('contactEmailInput');
 const contMessageEl = document.getElementById('contactMessageInput');
 const errorEl = document.getElementById('errorMessage');
-const contFormEl = document.getElementById('contactForm')
+const contFormEl = document.getElementById('contactForm');
+const refModalEl = document.getElementById('refModal');
+const refBtnEl = document.getElementById('refBtn');
+
 
 function chambord(){
     document.getElementById("chambord").innerHTML = "<img src='./assets/images/Chambord (1).jpg' alt='Château de Chambord' style='width: 300px; height: 300px; padding: -9px;'/>"
@@ -20,8 +23,9 @@ function chenonceau(){
 function bretagne (){
    document.getElementById("bretagne").innerHTML = "<img src='./assets/images/Bretagne (1).jpg' alt='Château des Ducs de Bretagne' style='width: 300px; height: 300px; padding: -9px;'/>"
 }
-// This is where the Modals scripts are stored
+// This is where the Modals scripts are grouped/////////////
 
+// This is the beginning of script for the contact form modal///////////
 const handleContact = function () {
     contactModalEl.style.display = 'block';
 }
@@ -54,5 +58,16 @@ const handleSubmit = function (){
 };
 
 contSendBtnEl.addEventListener('click', handleSubmit);
+// This is the bottom of the script for the contact form modal////////
 
-// // This is the bottom of the modals section
+// This is the beginning of script for the reference list modal///////
+const handleRef = function () {
+    refModalEl.style.display = 'block';
+}
+
+refBtnEl.addEventListener('click', handleRef);
+
+
+
+
+// // This is the bottom of the modals grouping//////////
