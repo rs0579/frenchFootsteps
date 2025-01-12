@@ -23,11 +23,18 @@
 
   .sidebar {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-  
-   
+    flex-direction: row;
+    gap: 5px;
+    margin-right: 50px;
+    margin-left: 20px;
+    justify-self: center;
+  }
+
+  .sidebar button {
+    width: 100px;
+    height: 50px;
+    padding: 10px 20px;
+    text-align: center;
   }
 
   
@@ -222,7 +229,7 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
-}
+
 
 @media screen and (max-width: 768px) {
     .grid {
