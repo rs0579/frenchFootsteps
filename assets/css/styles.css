@@ -227,7 +227,6 @@ span::after :hover{
     grid-template-rows: 2fr, 1fr, 1fr;
   }
 
-}
 
 .sidebar {
   position: sticky;
