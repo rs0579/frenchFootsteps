@@ -24,21 +24,13 @@ body {
   font-family: 'Lato', sans-serif;
 
 }
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-  }
 
 .sidebar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: left;
-  gap: 10px;
-  margin-left: 20px;
-  margin-right: 50px;
+  align-items: center;
+  width: 100%;
 }
 
 .sidebar button {
@@ -97,6 +89,7 @@ header nav a {
   align-items: normal;
   flex: 4;
   gap: 10px;
+  margin-top: 10%;
 }
 
 .box {
@@ -264,17 +257,25 @@ span::after :hover{
 /* Responsive Styles */
 @media only screen and (max-width: 425px) {
   .grid {
+    margin-top: 5%;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr, 1fr, 1fr;
+    
   }
    
     }
   .sidebar {
-      position: sticky;
-      top: 0;
-      flex-direction: row;
-      flex-wrap: wrap;
+    justify-content:center;
+    position: sticky;
+    Top: 0;
+    flex-direction: row;
     }
+  
+  .sidebar button {
+    flex-shrink: 2;
+    flex-basis: 30%;
+    text-wrap: nowrap;
+  }
 
 
 @media screen and (max-width: 768px) {
