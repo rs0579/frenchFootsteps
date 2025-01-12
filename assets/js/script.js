@@ -30,18 +30,18 @@ function bretagne (){
 // This is where the Modals scripts are grouped/////////////
 
 // This is the beginning of script for the contact form modal///////////
+
+contactBtnEl.addEventListener('click', handleContact);
 let handleContact = function () {
     contactModalEl.style.display = 'block';
 }
 
+contCloseBtnEl.addEventListener('click', cancelContact);
 let cancelContact = function () {
    contactModalEl.style.display = 'hide'; 
 }
 
-contactBtnEl.addEventListener('click', handleContact);
-
-
-contCloseBtnEl.addEventListener('click', cancelContact);
+contSendBtnEl.addEventListener('submit', handleSubmit);
 
 const messageArray = [];
 
@@ -49,13 +49,14 @@ const visitorMessageEl = {
     Name: contNameEl.value.trim(),
     Email: contEmailEl.value.trim(),
     Message: contMessageEl.value.trim(),
-};
+}
 
 const alertError = function () {
     const errorEl = document.createElement('p');
     contFormEl.appendChild(errorEl);
     errorEl.textContent = "Please complete the form.";
 }
+
 const handleSubmit = function (event){
     event.preventDefault (); 
     document.getElementById("visitorMessageEl");
@@ -72,7 +73,7 @@ const handleSubmit = function (event){
     localStorage.setItem("messages", JSON.stringify(messageArray));
 };
 
-contSendBtnEl.addEventListener('submit', handleSubmit);
+
 // This is the bottom of the script for the contact form modal////////
 
 // This is the beginning of script for the reference list modal///////

@@ -23,9 +23,10 @@
 
   .sidebar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:center;
     align-items: center;
+    width: 100%
   
    
   }
@@ -215,11 +216,10 @@
     grid-template-rows: 2fr, 1fr, 1fr;
   }
    
-    }
+  }
   .sidebar {
       position: sticky;
       top: 0;
-      flex-direction: row;
       flex-wrap: wrap;
     }
 
@@ -236,8 +236,12 @@
     grid-template.columns: 1fr, 1fr, 1fr;
     grid-template-rows: 1fr, 1fr, 1fr;
   }
+  /* .sidebar {
+    width: 100%;
+    flex-direction: row;
+  } */
  }
-  
+ 
 
 
   
