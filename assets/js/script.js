@@ -13,12 +13,35 @@ const refModalEl = document.getElementById('refModal');
 const refBtnEl = document.getElementById('refBtn');
 const addResBtnEl = document.getElementById('addResBtn')
 const addResModalEl = document.getElementById('addResModalEl')
+const state = document.getAttribute("data-state")
+const expo = document.getAttribute("onclick")
 
 // Castle Image Boxes here///////////
 
-function chambord(){
+function chambord(event){
     document.getElementById("chambord").innerHTML = "<img src='./assets/images/Chambord (1).jpg' alt='Château de Chambord' style='width: 300px; height: 300px; padding: -9px;'/>"
+    const element = event.target
+    if (state === "hidden"){
+        element.content = element.expo  //BECAUSE I AM NOT USING A CUSTOM ATTRIBUTE, I DID NOT USE THE DATASET METHOD, INSTEAD OPTING TO USE THE VARIABLE I CREATED FROM THE ONCLICK ATTRIBUTE IN THE HTML. LESSON20 WEB APIS... I BELIEVE THE DATASET TARGETS THE CUSTOM ATTRIBUTE
+        element.expo.state = "visible" //THIS IS THE NEW STATE FOR THE CUSTOM ELEMENT - ONCE YOU CLICK ON THE BOX, THE STATE SHOULD CHANGE FROM HIDDEN TO VISIBLE NOW.
+    
+    } else {
+        element.textContent = ""
+        element.setAttribute('data-state', 'hidden')
+    }
 }
+
+boxEl.addEventListener('click', function(event){
+    element = event.target
+    if (state === "hidden"){
+        element.innerHTML = element.expo
+        element.dataset.state = 'visible'
+    } else{
+        element.textContent = ""
+        element.setAttribute("data-state", "hidden")
+    }
+
+})
 
 function chenonceau(){
  document.getElementById("chenonceau").innerHTML = "<img src='./assets/images/Chenonceau (1).jpg' alt='Château de Chenonceau' style='width: 300px; height: 300px; padding: -9px;'/>"
@@ -27,6 +50,10 @@ function chenonceau(){
 function bretagne (){
    document.getElementById("bretagne").innerHTML = "<img src='./assets/images/Bretagne (1).jpg' alt='Château des Ducs de Bretagne' style='width: 300px; height: 300px; padding: -9px;'/>"
 }
+function foix (){
+    document.getElementById("foix").innerHTML = "<img src='./assets/images/Foix (1).jpg' alt='Château de Foix' style='width: 300px; height: 300px; padding: -9px;'/>"
+ }
+
 // This is where the Modals scripts are grouped/////////////
 
 // This is the beginning of script for the contact form modal///////////
@@ -91,3 +118,4 @@ addResBtnEl.addEventListener('click', handleAddRes);
 
 
 // // This is the bottom of the modals grouping//////////
+boxEl
