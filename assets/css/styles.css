@@ -22,6 +22,12 @@ body {
   font-family: 'Lato', sans-serif;
 
 }
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
 
 .sidebar {
   display: flex;
@@ -41,8 +47,6 @@ body {
 .sidebar button:hover {
   background-color: rgb(63, 53, 20);
 }
-
-
 /* Header Styles */
 
 header {
@@ -101,17 +105,16 @@ header nav a {
 
 }
 
-
-.box:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-img {
-  padding: 20px;
-  height: 200px;
-  width: 300px;
-}
+  
+  .box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  img{
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+  }
 
 
 /* p #mimi::after {
@@ -241,14 +244,14 @@ span::after :hover{
     grid-template-columns: 1fr;
     grid-template-rows: 2fr, 1fr, 1fr;
   }
-
-
-.sidebar {
-  position: sticky;
-  top: 0;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+   
+    }
+  .sidebar {
+      position: sticky;
+      top: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
 
 @media screen and (max-width: 768px) {
@@ -263,4 +266,11 @@ span::after :hover{
     grid-template.columns: 1fr, 1fr, 1fr;
     grid-template-rows: 1fr, 1fr, 1fr;
   }
-}
+ }
+  
+
+
+  
+  
+  
+  
