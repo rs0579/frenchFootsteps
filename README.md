@@ -44,7 +44,7 @@ Raheem Senegal
 
 Aley Wigwe
 
-Harriet M
+Harriet Masese
 
 Jason Gerdes
 
