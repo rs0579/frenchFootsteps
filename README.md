@@ -1,8 +1,13 @@
 What was your motivation?
+RS: Our group's motivation for creating this dynamic, interactive learning tool originates from an interest in French historical architecture and a desire to spread awareness of a few gems spread throughout the country. From the home of the Renaissance kings, the _Centre-Val-de-Loire_ to the heart of the Occitan south in _Ariege_, we explore a few of France's most significant cultural monuments.
 Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
+RS: We have built this project to apply many of the key skills that we have acquired over the course of our learning experience. This project allows us to take the theoretical content that have learned and utilize it in a creative yet technically proficient manner. 
 What problem does it solve?
+RS: This project aims to instruct the user on a few of France's most recognizable historical monuments from the lens of connoisseur of French society and culture
 What did you learn?
+RS: Each of us learned key skills that helped us achieve our goal. We explored the use of the the "onclick" attribute, allowing the user to expose some of our unique images. We worked collaboratively to resolve issues linked to position, margin, padding and the like. We have uncovered the utility of modals, applying their properties to our peoject. We watched and learned how to make use of the localStorage feature in JS. Among many other things that had only been theoretical up untl then.
 What makes your project stand out?
+RS: What makes our project stand out from the rest is that it reflects a real-world experience that one of colllegues had throughout the course of their travels. It also incorpartes new concepts that were discovered through independent research and in class. The visual representation of our app is also quite remarkable, inspired by historical pages from tomes such as _Les Très Riches Heures des ducs de Berry_ and _La Cité des dames_.
 
 # French Footsteps: An exploration of Fortified France.
 
@@ -14,6 +19,8 @@ Provide a short description explaining the what, why, and how of your project. U
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
 - What did you learn?
+
+I learned that there are many intricate steps that go into building something like this but although it seemed like a very ambitious project at first, things started to become clearer with every error fixed. I also learned to be more resourceful, whether that be through pulling from my memory bank, troubleshooting with my groupmates or getting guidance from the TA, each instance kept me on my toes and kept me alert. 
 
 ## Table of Contents (Optional)
 

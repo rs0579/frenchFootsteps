@@ -246,6 +246,7 @@ span::after :hover{
 }
 
 
+
   #mainFooter {
     background-color: none
     bottom: 0;
@@ -257,6 +258,19 @@ span::after :hover{
   }
   
   
+
+#mainFooter {
+  position: fixed;
+  background-image: url(https://i.pinimg.com/736x/3a/69/9c/3a699c0b0a22c8982fd40144628b3df2.jpg);
+  color: black;
+  left: 0;
+  bottom: 0;
+  height: 20;
+  width: 100%;
+  overflow: hidden;
+
+}
+
 
   body {
     position: relative; /* Add this to the body */
