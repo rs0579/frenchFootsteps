@@ -64,7 +64,7 @@ header h1 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: bold;
   background: url(https://i.pinimg.com/736x/5e/bd/6d/5ebd6d049a3ab1fd8526a846f1551dbc.jpg) no-repeat center;
   background-size: cover;
@@ -248,7 +248,7 @@ span::after :hover{
 /* Footer Styles */
 
 #mainFooter {
-  position: sticky;
+  position: fixed;
   background-color: none;
   color: black;
   left: 0;
@@ -258,6 +258,7 @@ span::after :hover{
   overflow: hidden;
 
 }
+
 
 #mainFooterText {
   font-weight: 600;
@@ -274,28 +275,44 @@ span::after :hover{
     margin-top: 5%;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr, 1fr, 1fr;
-    
   }
-   
-    }
-  .sidebar {
-    justify-content:center;
-    position: sticky;
-    Top: 0;
-    flex-direction: row;
-    }
   
+
+  header h1 {
+    margin-top: 10px;
+    font-size: 3em;
+  }
+
+
+  .sidebar {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: none;
+  }
+
   .sidebar button {
-    flex-shrink: 2;
+    flex-shrink: 1;
     flex-basis: 30%;
     text-wrap: nowrap;
   }
+
+
+   
+    }
+
+
 
 
 @media screen and (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr, 1fr, 1fr;
+  }
+
+ 
+
+  header h1 {
+    font-size: 3rem;
   }
 }
 
