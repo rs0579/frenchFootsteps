@@ -16,7 +16,7 @@ const addResModalEl = document.getElementById('addResModalEl')
 const state = document.getAttribute("data-state")
 const expo = document.getAttribute("onclick")
 
-// Castle Image Boxes here///////////
+Castle Image Boxes here///////////
 
 function chambord(event){
     document.getElementById("chambord").innerHTML = "<img src='./assets/images/Chambord (1).jpg' alt='Château de Chambord' style='width: 300px; height: 300px; padding: -9px;'/>"
@@ -43,51 +43,43 @@ boxEl.addEventListener('click', function(event){
 
 })
 
-function chenonceau(){
- document.getElementById("chenonceau").innerHTML = "<img src='./assets/images/Chenonceau (1).jpg' alt='Château de Chenonceau' style='width: 300px; height: 300px; padding: -9px;'/>"
+function chenonceau(){= document.getElementById("chenonceau").innerHTML = "<img src='./assets/images/Chenonceau (1).jpg' alt='Château de Chenonceau' style='width: 300px; height: 300px; padding: -9px;'/>"
 }
 
-function bretagne (){
-   document.getElementById("bretagne").innerHTML = "<img src='./assets/images/Bretagne (1).jpg' alt='Château des Ducs de Bretagne' style='width: 300px; height: 300px; padding: -9px;'/>"
+function bretagne (){= document.getElementById("bretagne").innerHTML = "<img src='./assets/images/Bretagne (1).jpg' alt='Château des Ducs de Bretagne' style='width: 300px; height: 300px; padding: -9px;'/>"
 }
-function foix (){
-    document.getElementById("foix").innerHTML = "<img src='./assets/images/Foix (1).jpg' alt='Château de Foix' style='width: 300px; height: 300px; padding: -9px;'/>"
+function foix (){= document.getElementById("foix").innerHTML = "<img src='./assets/images/Foix (1).jpg' alt='Château de Foix' style='width: 300px; height: 300px; padding: -9px;'/>"
  }
 
 // This is where the Modals scripts are grouped/////////////
 
 // This is the beginning of script for the contact form modal///////////
 
-contactBtnEl.addEventListener('click', handleContact);
-let handleContact = function () {
-    contactModalEl.style.display = 'block';
-}
+// contactBtnEl.addEventListener('click', handleContact);
 
-contCloseBtnEl.addEventListener('click', cancelContact);
-let cancelContact = function () {
-   contactModalEl.style.display = 'hide'; 
-}
+// let handleContact = function () {
+//     contactModalEl.style.display = 'block';
+// }
 
-contSendBtnEl.addEventListener('submit', handleSubmit);
+// contCloseBtnEl.addEventListener('click', cancelContact);
+
+// let cancelContact = function () {
+//    contactModalEl.style.display = 'hide'; 
+// };
+// this will reset array on load, create function
 
 const messageArray = [];
-
+console.log("Wehave a console!")
 const visitorMessageEl = {
-    Name: contNameEl.value.trim(),
-    Email: contEmailEl.value.trim(),
-    Message: contMessageEl.value.trim(),
-}
-
-const alertError = function () {
-    const errorEl = document.createElement('p');
-    contFormEl.appendChild(errorEl);
-    errorEl.textContent = "Please complete the form.";
-}
+        Name: contNameEl.value.trim(),
+        Email: contEmailEl.value.trim(),
+        Message: contMessageEl.value.trim(),
+        };
 
 const handleSubmit = function (event){
-    event.preventDefault (); 
-    document.getElementById("visitorMessageEl");
-        if (contEmailEl.value.trim() === "") {
+    console.log("handleSubmit success")
+    event.preventDefault();
+    if (contEmailEl.value.trim() === "") {
         alertError();
         } if (contMessageEl.value.trim() === "") { 
             alertError();
@@ -95,10 +87,33 @@ const handleSubmit = function (event){
                 alertError();
                 } else {
                     console.log(visitorMessageEl);
+                    messageArray.push(visitorMessageEl);
+                    localStorage.setItem("messages", JSON.stringify(messageArray));
+                    console.log ("You have received a new message!");
                 };
-    messageArray.push(visitorMessageEl);
-    localStorage.setItem("messages", JSON.stringify(messageArray));
 };
+
+const alertError = function () {
+    const errorEl = document.createElement('p');
+    contFormEl.appendChild(errorEl);
+       errorEl.textContent = "Please complete the form.";
+    }
+
+contSendBtnEl.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    console.log("sendbtn works")})
+
+
+// (e)=>{handleSubmit(e)}
+// localStorage.setItem('messages', JSON.stringify('visitorMessageEl'));
+// const visitorMessage = JSON.parse(localStorage.getItem('visitorMessageEl'));
+// 
+// const renderVisitorMessage = function () {}
+// const visitorMessageEl = {
+//     Name: contNameEl.value.trim(),
+//     Email: contEmailEl.value.trim(),
+//     Message: contMessageEl.value.trim(),
+// }
 
 
 // This is the bottom of the script for the contact form modal////////
@@ -119,4 +134,3 @@ addResBtnEl.addEventListener('click', handleAddRes);
 
 
 // // This is the bottom of the modals grouping//////////
-boxEl
