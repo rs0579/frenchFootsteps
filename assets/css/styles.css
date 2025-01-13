@@ -245,20 +245,30 @@ span::after :hover{
   margin-bottom: 10px;
 }
 
-/* Footer Styles */
 
-#mainFooter {
-  position: fixed;
-  background-color: none;
-  color: black;
-  left: 0;
-  bottom: 0;
-  height: 20;
-  width: 100%;
-  overflow: hidden;
-
-}
-
+  #mainFooter {
+    background-color: none
+    bottom: 0;
+    left: 0;
+    color: black;
+    height: 100px; /* Set a fixed height for the footer */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    position: relative; /* Add this to the body */
+    min-height: 50vh; /* Add this to the body */
+    margin-top: 60px; /* Add this to the body */
+    padding: 0; /* Add this to the body */
+  }
+  
+  /* Add a wrapper div around the content */
+  .wrapper {
+    min-height: calc(100vh - 20px); /* Subtract the footer height from the viewport height */
+    padding-bottom: 20px; /* Add some padding to the bottom of the wrapper */
+  }
+  
 
 #mainFooterText {
   font-weight: 600;
