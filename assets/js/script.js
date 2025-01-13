@@ -84,18 +84,14 @@ const handleSubmit = function (event){
         Email: contEmailEl.value.trim(),
         Message: contMessageEl.value.trim(),
         };
-    if (contEmailEl.value.trim() === "") {
+    if (contEmailEl.value.trim() === "" || (contMessageEl.value.trim() === "") || (contNameEl.value.trim() === "")) {
         alertError();
-        } if (contMessageEl.value.trim() === "") { 
-            alertError();
-            } if (contNameEl.value.trim() === ""){
-                alertError();
-                } else {
-                    console.log(visitorMessageEl);
-                    messageArray.push(visitorMessageEl);
-                    localStorage.setItem("messages", JSON.stringify(messageArray));
-                    console.log ("You have received a new message!");
-                };
+            } else {
+                console.log(visitorMessageEl);
+                messageArray.push(visitorMessageEl);
+                localStorage.setItem("messages", JSON.stringify(messageArray));
+                console.log ("You have received a new message!");
+            };
 };
 
 const alertError = function () {
