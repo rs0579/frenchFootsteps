@@ -100,6 +100,7 @@ const handleSubmit = function (event){
                 console.log(visitorMessageEl);
                 messageArray.push(visitorMessageEl);
                 localStorage.setItem("messages", JSON.stringify(messageArray));
+                contFormEl.reset();
                 console.log ("You have received a new message!");
             };
 };
