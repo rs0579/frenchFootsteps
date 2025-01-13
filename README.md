@@ -20,6 +20,8 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve?
 - What did you learn?
 
+I learned that there are many intricate steps that go into building something like this but although it seemed like a very ambitious project at first, things started to become clearer with every error fixed. I also learned to be more resourceful, whether that be through pulling from my memory bank, troubleshooting with my groupmates or getting guidance from the TA, each instance kept me on my toes and kept me alert. 
+
 ## Table of Contents (Optional)
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
