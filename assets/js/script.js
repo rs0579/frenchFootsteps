@@ -31,17 +31,17 @@ function chambord(event){
     }
 }
 
-boxEl.addEventListener('click', function(event){
-    element = event.target
-    if (state === "hidden"){
-        element.innerHTML = element.expo
-        element.dataset.state = 'visible'
-    } else{
-        element.textContent = ""
-        element.setAttribute("data-state", "hidden")
-    }
+// boxEl.addEventListener('click', function(event){
+//     element = event.target
+//     if (state === "hidden"){
+//         element.innerHTML = element.expo
+//         element.dataset.state = 'visible'
+//     } else{
+//         element.textContent = ""
+//         element.setAttribute("data-state", "hidden")
+//     }
 
-})
+// })
 
 function chenonceau(){
  document.getElementById("chenonceau").innerHTML = "<img src='./assets/images/Chenonceau (1).jpg' alt='Château de Chenonceau' style='width: 300px; height: 300px; padding: -9px;'/>"
@@ -54,6 +54,12 @@ function foix (){
     document.getElementById("foix").innerHTML = "<img src='./assets/images/Foix (1).jpg' alt='Château de Foix' style='width: 300px; height: 300px; padding: -9px;'/>"
  }
 
+ function tours (){
+    document.getElementById("tours").innerHTML = "<img src='./assets/images/Tours.jpg' alt='Château de Tours' style='width: 300px; height: 300px; padding: -9px;'/>"
+ }
+ function versailles (){
+    document.getElementById("versailles").innerHTML = "<img src='./assets/images/palace.jpg' alt='Palace de Versailles' style='width: 300px; height: 300px; padding: -9px;'/>"
+ }
 // This is where the Modals scripts are grouped/////////////
 
 // This is the beginning of script for the contact form modal///////////
