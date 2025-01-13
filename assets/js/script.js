@@ -16,7 +16,7 @@ const addResModalEl = document.getElementById('addResModalEl')
 const state = document.getAttribute("data-state")
 const expo = document.getAttribute("onclick")
 
-Castle Image Boxes here///////////
+//Castle Image Boxes here///////////
 
 function chambord(event){
     document.getElementById("chambord").innerHTML = "<img src='./assets/images/Chambord (1).jpg' alt='Château de Chambord' style='width: 300px; height: 300px; padding: -9px;'/>"
@@ -43,14 +43,20 @@ boxEl.addEventListener('click', function(event){
 
 })
 
-function chenonceau(){= document.getElementById("chenonceau").innerHTML = "<img src='./assets/images/Chenonceau (1).jpg' alt='Château de Chenonceau' style='width: 300px; height: 300px; padding: -9px;'/>"
+function chenonceau(){ document.getElementById("chenonceau").innerHTML = "<img src='./assets/images/Chenonceau (1).jpg' alt='Château de Chenonceau' style='width: 300px; height: 300px; padding: -9px;'/>"
 }
 
-function bretagne (){= document.getElementById("bretagne").innerHTML = "<img src='./assets/images/Bretagne (1).jpg' alt='Château des Ducs de Bretagne' style='width: 300px; height: 300px; padding: -9px;'/>"
+function bretagne (){ document.getElementById("bretagne").innerHTML = "<img src='./assets/images/Bretagne (1).jpg' alt='Château des Ducs de Bretagne' style='width: 300px; height: 300px; padding: -9px;'/>"
 }
-function foix (){= document.getElementById("foix").innerHTML = "<img src='./assets/images/Foix (1).jpg' alt='Château de Foix' style='width: 300px; height: 300px; padding: -9px;'/>"
+function foix (){ document.getElementById("foix").innerHTML = "<img src='./assets/images/Foix (1).jpg' alt='Château de Foix' style='width: 300px; height: 300px; padding: -9px;'/>"
  }
-
+ function tours (){
+    document.getElementById("tours").innerHTML = "<img src='./assets/images/Tours.jpg' alt='Château de Tours' style='width: 300px; height: 300px; padding: -9px;'/>"
+ }
+ function versailles (){
+    document.getElementById("versailles").innerHTML = "<img src='./assets/images/palace.jpg' alt='Palace de Versailles' style='width: 300px; height: 300px; padding: -9px;'/>"
+ }
+ 
 // This is where the Modals scripts are grouped/////////////
 
 // This is the beginning of script for the contact form modal///////////
