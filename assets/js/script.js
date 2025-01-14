@@ -19,23 +19,11 @@ const state = document.getElementById('chambord').getAttribute('data-hidden')
 
 
 
-function chambord(event){
+function chambord(){
     document.getElementById("chambord").innerHTML = "<img src='./assets/images/Chambord (1).jpg' alt='Château de Chambord' style='width: 300px; height: 300px; padding: -9px;'/>"
-    const element = event.target.chambord
-    if (element === state){
-        setAttribute('style', 'display: none;')
-    }else { 
-        setAttribute('style','display: block')
-        
-    
-    }
-   
 }
-
-
 function chenonceau(){document.getElementById("chenonceau").innerHTML = "<img src='./assets/images/Chenonceau (1).jpg' alt='Château de Chenonceau' style='width: 300px; height: 300px; padding: -9px;'/>"
 }
-
 function bretagne (){document.getElementById("bretagne").innerHTML = "<img src='./assets/images/Bretagne (1).jpg' alt='Château des Ducs de Bretagne' style='width: 300px; height: 300px; padding: -9px;'/>"
 }
 function foix (){document.getElementById("foix").innerHTML = "<img src='./assets/images/Foix (1).jpg' alt='Château de Foix' style='width: 300px; height: 300px; padding: -9px;'/>"}
